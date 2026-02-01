@@ -37,7 +37,9 @@ describe('Dashboard Component', () => {
     const stringified = JSON.stringify(tree);
     
     // Check for key text elements
-    expect(stringified).toContain('Welcome to SAFE HOMECARE');
+    expect(stringified).toContain('SAFE HOMECARE APP');
+    expect(stringified).toContain('WHAT IS SAFE HOMECARE?');
+    expect(stringified).toContain('HOW IS THIS ACHIEVED?');
     expect(stringified).toContain('System Status');
   });
 });

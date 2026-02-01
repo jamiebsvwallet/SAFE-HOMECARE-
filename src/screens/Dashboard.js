@@ -45,13 +45,73 @@ const Dashboard = ({navigation}) => {
 
   return (
     <ScrollView style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Welcome to SAFE HOMECARE</Text>
-        <Text style={styles.subtitle}>
-          Your complete leak detection and prevention program
+      {/* Blue Header Box */}
+      <View style={styles.blueHeaderBox}>
+        <Text style={styles.mainTitle}>SAFE HOMECARE APP</Text>
+        <Text style={styles.introText}>
+          Introducing Safe Homecare... The complete Leak detection and Prevention 
+          program with 12 months cover. The fastest way to a Leak free Home.
         </Text>
       </View>
 
+      {/* What is Safe Homecare Section */}
+      <View style={styles.infoSection}>
+        <Text style={styles.sectionTitle}>WHAT IS SAFE HOMECARE?</Text>
+        <Text style={styles.sectionText}>
+          Safe Homecare is a specifically designed cover plan and platform 
+          combining all your plumbing, leak detection and maintenance needs under 
+          one cover whilst focusing on the prevention of any future Leaks or 
+          damages to your home.
+        </Text>
+      </View>
+
+      {/* How is this Achieved Section */}
+      <View style={styles.howSection}>
+        <Text style={styles.howTitle}>HOW IS THIS ACHIEVED?</Text>
+        
+        <View style={styles.bulletPoint}>
+          <Text style={styles.bulletText}>•</Text>
+          <Text style={styles.bulletContent}>
+            Initial annual full property survey to locate and rectify any present 
+            or potential leaks. Ensuring a leak free home on completion.
+          </Text>
+        </View>
+
+        <View style={styles.bulletPoint}>
+          <Text style={styles.bulletText}>•</Text>
+          <Text style={styles.bulletContent}>
+            Our engineers will install a leak prevention and water consumption 
+            device that will automatically shut off the water supply when a leak 
+            is detected, in which an alert will be activated on your app alerting 
+            you of a leak, allowing you to act quickly and monitor your water 
+            consumption and control spending.
+          </Text>
+        </View>
+
+        <View style={styles.bulletPoint}>
+          <Text style={styles.bulletText}>•</Text>
+          <Text style={styles.bulletContent}>
+            Maintaining the property throughout 12 months cover with any needed 
+            maintenance works undertaken for any potential water related issues.
+          </Text>
+        </View>
+
+        <View style={styles.bulletPoint}>
+          <Text style={styles.bulletText}>•</Text>
+          <Text style={styles.bulletContent}>
+            The ability to work alongside utility and insurance companies if 
+            needed for faster responses, saving time, expenses and damages.
+          </Text>
+        </View>
+      </View>
+
+      {/* Video Placeholder Box */}
+      <View style={styles.videoBox}>
+        <Text style={styles.videoPlaceholderText}>Video Content Area</Text>
+        <Text style={styles.videoSubtext}>Video will be displayed here</Text>
+      </View>
+
+      {/* System Status Card */}
       <View style={styles.statusCard}>
         <Text style={styles.statusLabel}>System Status</Text>
         <Text
@@ -66,6 +126,7 @@ const Dashboard = ({navigation}) => {
         </Text>
       </View>
 
+      {/* Navigation Buttons */}
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           style={styles.primaryButton}
@@ -101,15 +162,6 @@ const Dashboard = ({navigation}) => {
           <Text style={styles.buttonText}>🔔 Alert Settings</Text>
         </TouchableOpacity>
       </View>
-
-      <View style={styles.infoCard}>
-        <Text style={styles.infoTitle}>About SAFE HOMECARE</Text>
-        <Text style={styles.infoText}>
-          Safe Homecare combines all your plumbing, leak detection, and
-          maintenance needs under one platform. Our AI-powered sensors provide
-          24/7 monitoring to prevent water damage and keep your home safe.
-        </Text>
-      </View>
     </ScrollView>
   );
 };
@@ -119,25 +171,120 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f5f5f5',
   },
-  header: {
+  // Blue Header Box
+  blueHeaderBox: {
     backgroundColor: '#2196F3',
-    padding: 20,
+    padding: 25,
     paddingTop: 30,
+    paddingBottom: 30,
+    margin: 0,
   },
-  title: {
-    fontSize: 24,
+  mainTitle: {
+    fontSize: 28,
     fontWeight: 'bold',
     color: '#fff',
-    marginBottom: 5,
+    marginBottom: 15,
+    textAlign: 'center',
   },
-  subtitle: {
-    fontSize: 14,
+  introText: {
+    fontSize: 16,
     color: '#fff',
-    opacity: 0.9,
+    lineHeight: 24,
+    textAlign: 'center',
   },
+  // What is Safe Homecare Section
+  infoSection: {
+    backgroundColor: '#fff',
+    margin: 15,
+    padding: 20,
+    borderRadius: 10,
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  sectionTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#2196F3',
+    marginBottom: 15,
+    textAlign: 'center',
+  },
+  sectionText: {
+    fontSize: 15,
+    color: '#333',
+    lineHeight: 22,
+    textAlign: 'justify',
+  },
+  // How is this Achieved Section
+  howSection: {
+    backgroundColor: '#fff',
+    margin: 15,
+    marginTop: 0,
+    padding: 20,
+    borderRadius: 10,
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+  },
+  howTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#4CAF50',
+    marginBottom: 15,
+    textAlign: 'center',
+  },
+  bulletPoint: {
+    flexDirection: 'row',
+    marginBottom: 15,
+    paddingRight: 10,
+  },
+  bulletText: {
+    fontSize: 18,
+    color: '#333',
+    marginRight: 10,
+    marginTop: 2,
+  },
+  bulletContent: {
+    flex: 1,
+    fontSize: 15,
+    color: '#333',
+    lineHeight: 22,
+    textAlign: 'justify',
+  },
+  // Video Box
+  videoBox: {
+    backgroundColor: '#f0f0f0',
+    margin: 15,
+    marginTop: 0,
+    padding: 40,
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#2196F3',
+    borderStyle: 'dashed',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: 200,
+    elevation: 2,
+  },
+  videoPlaceholderText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#2196F3',
+    marginBottom: 8,
+  },
+  videoSubtext: {
+    fontSize: 14,
+    color: '#666',
+  },
+  // Status Card
   statusCard: {
     backgroundColor: '#fff',
     margin: 15,
+    marginTop: 0,
     padding: 20,
     borderRadius: 10,
     elevation: 3,
@@ -164,8 +311,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#999',
   },
+  // Buttons
   buttonContainer: {
     padding: 15,
+    paddingTop: 0,
   },
   primaryButton: {
     backgroundColor: '#2196F3',
@@ -186,25 +335,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
-  },
-  infoCard: {
-    backgroundColor: '#fff',
-    margin: 15,
-    marginTop: 5,
-    padding: 20,
-    borderRadius: 10,
-    elevation: 2,
-  },
-  infoTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#333',
-    marginBottom: 10,
-  },
-  infoText: {
-    fontSize: 14,
-    color: '#666',
-    lineHeight: 20,
   },
 });
 
