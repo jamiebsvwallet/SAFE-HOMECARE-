@@ -1,5 +1,17 @@
 # Dashboard New Layout - Visual Mockup
 
+## ⚠️ IMPORTANT NOTICE
+**This is just a text mockup/documentation showing what the app looks like.**
+
+**To see the ACTUAL app with REAL colors and styling, you must run:**
+```bash
+npm run android  # or npm run ios
+```
+
+**Not seeing colors? Read:** [IMPORTANT_READ_FIRST.md](IMPORTANT_READ_FIRST.md)
+
+---
+
 ## Updated Dashboard Screen Layout
 
 ```

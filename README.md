@@ -1,5 +1,15 @@
 # SAFE HOMECARE
 
+## ⚠️ IMPORTANT: To See the App with Colors & Styling
+**This is documentation. To see the ACTUAL STYLED APP with colors and boxes, you must run it:**
+```bash
+npm install
+npm run android  # or npm run ios
+```
+**See [IMPORTANT_READ_FIRST.md](IMPORTANT_READ_FIRST.md) if you're not seeing colors!**
+
+---
+
 SAFE HOME CARE is the complete leak detection and prevention program with 12 months cover. Safe Homecare is a specifically designed cover plan and platform combining all your plumbing, leak detection and maintenance needs under one cover whilst focusing on the prevention of any future leaks or damages to your home.
 
 ## Features

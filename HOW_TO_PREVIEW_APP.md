@@ -1,5 +1,24 @@
 # 📱 HOW TO SEE & PREVIEW THE SAFE HOMECARE APP
 
+## ⚠️ NOT SEEING COLORS OR BOXES?
+
+**You're looking at documentation files, not the actual app!**
+
+### The Problem:
+- Documentation files (.md) = Plain text descriptions
+- The actual app = Styled with colors, boxes, shadows
+
+### The Solution:
+**RUN THE APP to see the styling:**
+```bash
+npm install
+npm run android  # or npm run ios
+```
+
+**Read:** [IMPORTANT_READ_FIRST.md](IMPORTANT_READ_FIRST.md) for details
+
+---
+
 ## Quick Answer: 3 Ways to See Your App
 
 You have **3 options** to preview the SAFE HOMECARE app:
